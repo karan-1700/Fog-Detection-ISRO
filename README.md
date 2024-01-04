@@ -5,8 +5,49 @@
 The occurrence of fog is associated with several negative impacts as far as the life of people, their health and the socio-economic aspects are concerned. Therefore, it is crucial to observe and study the characteristics and physical behavior of fog to understand its complete life cycle. This information can assist us to better predict its occurrence and extent both spatially and temporally so as to mitigate some of the hazards associated with fog. In this report, a novel and simple remote sensing technique has been discussed which can be applied for any geostationary satellite data having at least one visible and one thermal infrared channel for detecting day time fog. The visible channel data of INSAT-3DR satellite is used to detect fog, while its thermal infrared channel observation is used to eliminate the medium- and high-level clouds and snow area by deriving various thresholds dynamically for each time instant. Spatial homogeneity, which is a unique characteristic property of fog, is also incorporated to detect fog efficiently. The fog maps generated using the proposed algorithm are validated qualitatively with the output of operational product from 0315UTC to 0945UTC for the whole month of January 2021. The algorithm is capable of detecting daytime fog without using the 3.9 μm channel that is contaminated by solar radiation during day time. Added to this, the proposed technique is developed to detect fog for each time of acquisition instead of depending on the previous day’s data unlike the operational product algorithm, thus making this algorithm suitable for operational use.
 
 # Contributors:
-* Karansinh Padhiar (padhiar.karan@gmail.com) [Final year project for B.Tech in Computer Science and Engineering]
+* Karansinh Padhiar (padhiar.karan@gmail.com)
 * Dr. Sasmita Chaurasia, Scientist at SAC, ISRO, Ahmedabad (Guide & Supervisor)
+
+### Project Details
+* Final year project for B.Tech in Computer Science and Engineering at Charotar University of Science and Technology (CHARUSAT).
+* This folder contains Python code used during SMART internship at ISRO for Fog Detection under the supervision of Dr. Sasmita Chaurasia.
+* Below is a short description of each Python file contained in this folder:
+
+```
+Fog_Detection_Code_Karan/
+    /fog_detection.py :
+            Main code for applying Fog Detection. Contains functions for applying:
+            (1) TIR1 Dynamic Temperature Threshold
+            (2) VIS Dynamic Reflectance Threshold and (3) TIR1 Std Dev threshold.
+    /fog_validation_with_operational_product.py :
+            Contains code for validating/comparing the fog generated using
+            the proposed algorithm with the operational fog product output.
+    /generate_composite_image.py :
+            Contains code for generating a Composite Image (fog free image)
+            using the last 15 day data.
+    /apply_linear_interpolation.py : 
+            Contains code for applying Linear Interpolation on the 30-minute interval
+            data to generate intermediate images at 15-minutes interval.
+    /README.txt :
+            Contains a short description of each file, the Python libraries
+            used in the code and their specific versions.
+```
+
+### Software And Hardware Used:
+1. Software Used:
+    - Operating System- Linux Ubuntu 20.04
+    - Python - 3.8.10
+        - NumPy - 1.22.1
+        - Pandas - 1.2.3
+        - Matplotlib - 3.3.4
+        - SciPy - 1.6.1
+        - H5py - 3.1.0
+    - Spyder IDE - 4.2.5
+3. Hardware Used:
+   - 4 GB RAM
+   - 2GHz Intel Core i3 CPU
+   - 1 TB storage
+
 
 # Background
 * Fog is a hazardous weather phenomenon that appears when water vapour near the surface is condensed to form suspended water droplets.
