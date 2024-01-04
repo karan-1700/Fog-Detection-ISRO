@@ -1,5 +1,12 @@
 # Fog-Detection-ISRO
-Detection of Day Time Fog over India using INSAT-3DR Satellite Data
+**Detection of Day Time Fog over India using INSAT-3DR Satellite Data**
+
+# Abstract
+The occurrence of fog is associated with several negative impacts as far as the life of people, their health and the socio-economic aspects are concerned. Therefore, it is crucial to observe and study the characteristics and physical behavior of fog to understand its complete life cycle. This information can assist us to better predict its occurrence and extent both spatially and temporally so as to mitigate some of the hazards associated with fog. In this report, a novel and simple remote sensing technique has been discussed which can be applied for any geostationary satellite data having at least one visible and one thermal infrared channel for detecting day time fog. The visible channel data of INSAT-3DR satellite is used to detect fog, while its thermal infrared channel observation is used to eliminate the medium- and high-level clouds and snow area by deriving various thresholds dynamically for each time instant. Spatial homogeneity, which is a unique characteristic property of fog, is also incorporated to detect fog efficiently. The fog maps generated using the proposed algorithm are validated qualitatively with the output of operational product from 0315UTC to 0945UTC for the whole month of January 2021. The algorithm is capable of detecting daytime fog without using the 3.9 μm channel that is contaminated by solar radiation during day time. Added to this, the proposed technique is developed to detect fog for each time of acquisition instead of depending on the previous day’s data unlike the operational product algorithm, thus making this algorithm suitable for operational use.
+
+# Contributors:
+* Karansinh Padhiar (padhiar.karan@gmail.com) [Final year project for B.Tech in Computer Science and Engineering]
+* Dr. Sasmita Chaurasia, Scientist at SAC, ISRO, Ahmedabad (Guide & Supervisor)
 
 # Background
 * Fog is a hazardous weather phenomenon that appears when water vapour near the surface is condensed to form suspended water droplets.
@@ -11,9 +18,6 @@ Detection of Day Time Fog over India using INSAT-3DR Satellite Data
 # Objective
 * In this project, **we propose an algorithm for automatic detection of day-time fog** over the Indian region using INSAT-3DR IMAGER data.
 * Later on, using satellite data, we plan to predict the time when the fog patch would disappear completely.
-
-# Abstract
-The occurrence of fog is associated with several negative impacts as far as the life of people, their health and the socio-economic aspects are concerned. Therefore, it is crucial to observe and study the characteristics and physical behavior of fog to understand its complete life cycle. This information can assist us to better predict its occurrence and extent both spatially and temporally so as to mitigate some of the hazards associated with fog. In this report, a novel and simple remote sensing technique has been discussed which can be applied for any geostationary satellite data having at least one visible and one thermal infrared channel for detecting day time fog. The visible channel data of INSAT-3DR satellite is used to detect fog, while its thermal infrared channel observation is used to eliminate the medium- and high-level clouds and snow area by deriving various thresholds dynamically for each time instant. Spatial homogeneity, which is a unique characteristic property of fog, is also incorporated to detect fog efficiently. The fog maps generated using the proposed algorithm are validated qualitatively with the output of operational product from 0315UTC to 0945UTC for the whole month of January 2021. The algorithm is capable of detecting daytime fog without using the 3.9 μm channel that is contaminated by solar radiation during day time. Added to this, the proposed technique is developed to detect fog for each time of acquisition instead of depending on the previous day’s data unlike the operational product algorithm, thus making this algorithm suitable for operational use.
 
 # Flowchart
 ![Project Flowchart](https://github.com/karan-1700/Fog-Detection-ISRO/blob/main/assets/images/18DCS055_Project_Report_Flowchart.png)
